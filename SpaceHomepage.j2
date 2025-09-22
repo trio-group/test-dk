@@ -1,0 +1,258 @@
+{
+    "type": "doc",
+    "content": [
+        {
+            "type": "layoutSection",
+            "marks": [
+                {
+                    "type": "breakout",
+                    "attrs": {
+                        "mode": "full-width"
+                    }
+                }
+            ],
+            "content": [
+                {
+                    "type": "layoutColumn",
+                    "attrs": {
+                        "width": 50.0
+                    },
+                    "content": [
+                        {
+                            "type": "panel",
+                            "attrs": {
+                                "panelType": "info"
+                            },
+                            "content": [
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "text": "Content",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "inlineExtension",
+                                            "attrs": {
+                                                "extensionType": "com.atlassian.confluence.macro.core",
+                                                "extensionKey": "pagetree",
+                                                "parameters": {
+                                                    "macroParams": {
+                                                        "startDepth": {
+                                                            "value": "3"
+                                                        },
+                                                        "searchBox": {
+                                                            "value": "true"
+                                                        }
+                                                    },
+                                                    "macroMetadata": {
+                                                        "macroId": {
+                                                            "value": "6bde4142bab2ae9a4fd76df4ed965a858f59b38a78af4aedc39564dddff9a29e"
+                                                        },
+                                                        "schemaVersion": {
+                                                            "value": "1"
+                                                        },
+                                                        "title": "Page Tree"
+                                                    }
+                                                },
+                                                "localId": "33183e21-d8c4-4d2e-8d3c-69cb3be52486"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "layoutColumn",
+                    "attrs": {
+                        "width": 50.0
+                    },
+                    "content": [
+                        {
+                            "type": "panel",
+                            "attrs": {
+                                "panelType": "success"
+                            },
+                            "content": [
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "text": "Customer",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "text": "{{ CustomerName }}",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "type": "hardBreak"
+                                        },
+                                        {
+                                            "text": "{{ CustomerStreet }}",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "type": "hardBreak"
+                                        },
+                                        {
+                                            "text": "{{ CustomerTown }}",
+                                            "type": "text"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "panel",
+                            "attrs": {
+                                "panelType": "note"
+                            },
+                            "content": [
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "text": "Important URLs",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "bulletList",
+                                    "content": [
+                                        {
+                                            "type": "listItem",
+                                            "content": [
+                                                {
+                                                    "type": "paragraph",
+                                                    "content": [
+                                                        {
+                                                            "text": "Sharepoint",
+                                                            "type": "text",
+                                                            "marks": [
+                                                                {
+                                                                    "type": "link",
+                                                                    "attrs": {
+                                                                        "href": "{{ CustomerSPLink }}"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "listItem",
+                                            "content": [
+                                                {
+                                                    "type": "paragraph",
+                                                    "content": [
+                                                        {
+                                                            "text": "Teams",
+                                                            "type": "text",
+                                                            "marks": [
+                                                                {
+                                                                    "type": "link",
+                                                                    "attrs": {
+                                                                        "href": "{{ TeamsLink }}"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "listItem",
+                                            "content": [
+                                                {
+                                                    "type": "paragraph",
+                                                    "content": [
+                                                        {
+                                                            "text": "Passwordstate",
+                                                            "type": "text",
+                                                            "marks": [
+                                                                {
+                                                                    "type": "link",
+                                                                    "attrs": {
+                                                                        "href": "{{ PasswordstateLink }}"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "extension",
+            "attrs": {
+                "layout": "default",
+                "extensionType": "com.atlassian.confluence.macro.core",
+                "extensionKey": "recently-updated",
+                "parameters": {
+                    "macroParams": {
+                        "types": {
+                            "value": "page"
+                        },
+                        "max": {
+                            "value": "5"
+                        },
+                        "theme": {
+                            "value": "sidebar"
+                        },
+                        "maxToggle": {
+                            "value": "false"
+                        }
+                    },
+                    "macroMetadata": {
+                        "macroId": {
+                            "value": "8e24a2ca8cedb77b1746472cb59a8e9606974f9df768e610ad6282a633009684"
+                        },
+                        "schemaVersion": {
+                            "value": "1"
+                        },
+                        "title": "Recent updates"
+                    }
+                },
+                "localId": "b6acfab0-a5d1-47c4-9bef-a50a5ec5ed5f"
+            }
+        },
+        {
+            "type": "paragraph"
+        }
+    ],
+    "version": 1
+}
